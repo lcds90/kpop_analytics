@@ -2,7 +2,7 @@
   "name": "quasar-kpop-statistics",
   "version": "0.0.1",
   "description": "Statistics for kpop world!",
-  "productName": "KPOP Statistics",
+  "productName": "📊 K-Pop Analytics",
   "author": "lcds90 <lcds90@gmail.com>",
   "private": true,
   "scripts": {
