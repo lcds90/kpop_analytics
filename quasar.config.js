@@ -14,7 +14,7 @@
 const { configure } = require('quasar/wrappers');
 const path = require('path');
 
-module.exports = configure((/* ctx */) => ({
+module.exports = configure((ctx) => ({
   eslint: {
     fix: true,
     // include = [],
@@ -75,7 +75,7 @@ module.exports = configure((/* ctx */) => ({
     // ignorePublicFolder: true,
     // minify: false,
     // polyfillModulePreload: true,
-    // distDir
+    distDir: ctx.mode.spa ? 'public' : null,
 
     // extendViteConf (viteConf) {},
     // viteVuePluginOptions: {},
