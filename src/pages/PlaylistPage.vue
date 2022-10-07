@@ -20,6 +20,22 @@ onMounted(() => {
 
 <template>
   <div class="q-ma-lg">
+    <div class="q-mb-md">
+      <q-breadcrumbs>
+        <q-breadcrumbs-el
+          label="Home"
+          icon="home"
+          to="/"
+          class="text-grey"
+        />
+        <q-breadcrumbs-el
+          :label="playlist?.snippet.title"
+          icon="playlist_add_check"
+          exact
+        />
+      </q-breadcrumbs>
+    </div>
+
     <q-carousel
       v-model="slide"
       transition-prev="scale"
@@ -43,7 +59,10 @@ onMounted(() => {
           size="56px"
         />
         <div class="q-mt-md text-center">
-          ok
+          <img
+            src="~src/assets/images/newjeans/01_newjeans.jpg"
+            alt=""
+          >
         </div>
       </q-carousel-slide>
       <q-carousel-slide
